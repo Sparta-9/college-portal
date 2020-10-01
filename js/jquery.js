@@ -9481,7 +9481,7 @@ jQuery.ajaxTransport( function( options ) {
 	// Cross domain only allowed if supported through XMLHttpRequest
 	if ( support.cors || xhrSupported && !options.crossDomain ) {
 		return {
-			send: function( headers, complete ) {
+			send: function( headers,complete ) {
 				var i,
 					xhr = options.xhr();
 
@@ -9630,7 +9630,7 @@ jQuery.ajaxPrefilter( function( s ) {
 jQuery.ajaxSetup( {
 	accepts: {
 		script: "text/javascript, application/javascript, " +
-			"application/ecmascript, application/x-ecmascript"
+			"application/ecmascript,application/x-ecmascript"
 	},
 	contents: {
 		script: /\b(?:java|ecma)script\b/
@@ -10007,7 +10007,7 @@ jQuery.fn.extend( {
 		}
 
 		var rect, win,
-			elem = this[ 0 ];
+			elem =this[ 0 ];
 
 		if ( !elem ) {
 			return;
